@@ -20,16 +20,38 @@ else:
     print ("false")
 
 
-#PATH_OF_GIT_REPO = r'https://github.com/foysalrahman/antu.git'  # make sure .git folder is properly configured
+#PATH_OF_GIT_REPO = r'/home/frahman/python'  # make sure .git folder is properly configured
 #COMMIT_MESSAGE = 'comment from python script'
 
-repo_dir = 'antu'
-g = Github("foysalrahman", "Antu@0124")
-Repository = g.get_user().get_repo('antu')
-file_list = [
-        'logname'
-]
-commit_message = 'Add log'
-Repository.index.add(file_list)
-Repository.index.commit(commit_message)
-origin = repo.remote('origin')
+#repo_dir = 'antu'
+#g = Github("antu0124@gmail.com", "Antu@0124")
+#g = Github()
+#Repository = g.get_user().get_repo('antu')
+#Repository = g.get_user().get_repo(PATH_OF_GIT_REPO)
+#print(Repository)
+#file_list = [
+#        'logname'
+#]
+#commit_message = 'Add log'
+#Repository.index.add(file_list)
+#pygit.add(file_list)
+#Repository.index.commit(commit_message)
+#origin = repo.remote('origin')
+
+PATH_OF_GIT_REPO = r'/home/frahman/python'  # make sure .git folder is properly configured
+COMMIT_MESSAGE = 'comment from python script'
+
+def git_push():
+    try:
+        repo = Repo(PATH_OF_GIT_REPO)
+        #file_list = [
+        #'report.txt'
+        #]
+        repo.git.add(update=True)
+        #repo.git.add(file_list)
+        repo.index.commit(COMMIT_MESSAGE)
+        origin = repo.remote(name='origin')
+        origin.push()
+    except:
+        print('Some error occured while pushing the code')
+git_push()    

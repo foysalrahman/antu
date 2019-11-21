@@ -29,7 +29,7 @@ else:
 def git_push():
     #try:
     repo_dir = 'antu'
-    g = Github("foysalrahman", "Antu@0124")
+    g = Github("foysalrahman", "password")
     Repository = g.get_user().get_repo('antu')
     file_list = [
         'logname'
@@ -43,26 +43,5 @@ def git_push():
     #    print('Some error occured while pushing the code2')    
 
 git_push()
-
-
-
-#if  log_a():
-#        print('True')
-#else:
-#    print('False')
-    
-
-
-#print(log_a)
-#self.logger = logging.getLogger('urbanGUI')
-
-
-#import sys
-#import logging
-#import util#
-#
-#from util import reducer_logfile
-#logging.basicConfig(filename=reducer_logfile, format='%(message)s',
-#                    level=logging.INFO, filemode='w')
 
 
