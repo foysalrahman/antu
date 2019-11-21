@@ -38,7 +38,7 @@ else:
 #Repository.index.commit(commit_message)
 #origin = repo.remote('origin')
 
-PATH_OF_GIT_REPO = r'/home/frahman/python'  # make sure .git folder is properly configured
+PATH_OF_GIT_REPO = r'/home/frahman/python/'  # make sure .git folder is properly configured
 COMMIT_MESSAGE = 'comment from python script'
 
 def git_push():
