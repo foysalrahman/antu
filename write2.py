@@ -13,30 +13,11 @@ b=int(input("enter value: "))
 if a+b>=4:
     def write_a():
         with open("report.txt","a") as f:
-            f.write("numbers are{} and {}".format(a,b))
+            f.write("numbers are{} and {}".format(a,b)+"\n")
     write_a()
     print("true")
 else:
     print ("false")
-
-
-#PATH_OF_GIT_REPO = r'/home/frahman/python'  # make sure .git folder is properly configured
-#COMMIT_MESSAGE = 'comment from python script'
-
-#repo_dir = 'antu'
-#g = Github("antu0124@gmail.com", "Antu@0124")
-#g = Github()
-#Repository = g.get_user().get_repo('antu')
-#Repository = g.get_user().get_repo(PATH_OF_GIT_REPO)
-#print(Repository)
-#file_list = [
-#        'logname'
-#]
-#commit_message = 'Add log'
-#Repository.index.add(file_list)
-#pygit.add(file_list)
-#Repository.index.commit(commit_message)
-#origin = repo.remote('origin')
 
 PATH_OF_GIT_REPO = r'/home/frahman/python/.git/'  # make sure .git folder is properly configured
 COMMIT_MESSAGE = 'comment from python script'
