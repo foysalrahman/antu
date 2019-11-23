@@ -13,7 +13,7 @@ b=int(input("enter value: "))
 if a+b>=4:
     def write_a():
         with open("report.txt","a") as f:
-            f.write("numbers are{} and {}".format(a,b)+"\n")
+            f.write("numbers are {} and {}".format(a,b)+"\n")
     write_a()
     print("true")
 else:
