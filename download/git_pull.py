@@ -11,3 +11,16 @@ git.Repo.clone_from('https://github.com/foysalrahman/antu', t, branch='master', 
 shutil.move(os.path.join(t, 'report.txt'), '.')
 # Remove temporary dir
 shutil.rmtree(t)
+
+def check():
+    with open('report.txt') as f:
+        datafile = f.readlines()
+    for line in datafile:
+        if "550" in line:
+            return True
+    return False
+
+if check():
+    print('True')
+else:
+    print('False')

@@ -1,0 +1,8 @@
+1,Roamnce,1
+2,Roamnce,4
+3,Spy,10
+4,Spy,10
+4,si-fi,6
+3,Roamnce,2
+t,Roamnce,1
+w,Roamnce,2

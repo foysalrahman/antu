@@ -1,0 +1,9 @@
+a,Romance,10
+b,Romance,6
+c,Si-fi,9
+d,Horror,5
+e,War,7
+e,Horror,5
+f,Si-fi,8
+t,Historic,6
+test,Si-fi,4
