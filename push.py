@@ -14,9 +14,9 @@ def git_push():
 #try:
     repo = Repo(PATH_OF_GIT_REPO)
     print(repo)
-    #file_list = [
-    #'report.txt'
-    #]
+    file_list = [
+    'report.txt'
+    ]
     repo.git.add(update=True)
     repo.git.add()
     repo.index.commit(COMMIT_MESSAGE)
