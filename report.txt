@@ -4,4 +4,7 @@ numbers are 330 and 330
 numbers are 440 and 440
 numbers are 550 and 550
 numbers are 660 and 660
-numbers are 770 and 770
+numbers are 880 and 880
+numbers are 990 and 990
+numbers are 1000 and 1000
+numbers are 1100 and 1100
